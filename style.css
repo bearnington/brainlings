@@ -1,0 +1,15 @@
+:root { --bg: #ffffff; --ink: #3c4650; --muted: #8a949e; --line: #e4e7eb; --green: #60c41e; --green-d: #4a9e14; }
+@media (prefers-color-scheme: dark) { :root { --bg: #161b20; --ink: #ecf0f4; --muted: #8c98a4; --line: #343d46; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+h1, h2 { line-height: 1.2; }
+h1 { font-size: 2.4rem; margin: 12px 0 4px; }
+h2 { font-size: 1.3rem; margin-top: 2em; }
+a { color: var(--green-d); }
+.lead { font-size: 1.2rem; color: var(--muted); margin-top: 0; }
+.button { display: inline-block; background: var(--green); color: #fff; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: .03em; padding: 14px 28px; border-radius: 14px; box-shadow: 0 4px 0 var(--green-d); margin: 20px 0; }
+.button:active { transform: translateY(4px); box-shadow: none; }
+ul { padding-left: 1.2em; }
+li { margin: 6px 0; }
+footer { border-top: 2px solid var(--line); margin-top: 48px; padding-top: 16px; color: var(--muted); font-size: .9rem; }
